@@ -1,0 +1,537 @@
+$color_1: white;
+$color_2: rgb(255, 255, 243);
+$background-color_1: brown;
+$background-color_2: rgb(255, 255, 243);
+$background-color_3: #00000050;
+$background-color_4: white;
+$background-color_5: lightgray;
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+@keyframes saltarin {
+	0% {
+		transform: translateY(-100px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(-100px);
+	}
+}
+.navbar {
+	background-color: $background-color_1;
+}
+.foto-home {
+	height: 900px;
+	background-image: linear-gradient(to bottom, rgb(255,255,255,0.1), #00000060 ), url(images/foto-home.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 70px 60px;
+	div {
+		display: flex;
+		justify-content: end;
+	}
+	p {
+		width: 300px;
+		color: $color_1;
+		padding: 15px;
+		background-color: $background-color_3;
+	}
+}
+body {
+	background-color: $background-color_2;
+}
+.navbar-brand {
+	img {
+		height: 45px;
+		border-radius: 15px 0px;
+		margin-left: 20px;
+	}
+}
+.titulo-general {
+	text-align: start;
+	color: $color_1;
+}
+.navbar-light {
+	.navbar-nav {
+		.active {
+			>.nav-link {
+				color: $color_2;
+			}
+		}
+		.nav-link {
+			color: $color_2;
+			width: 150px;
+		}
+	}
+}
+.segunda-parte {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.segundo-titulo {
+	text-align: center;
+	padding-top: 60px;
+}
+.segunda-foto {
+	width: 70%;
+	padding-top: 50px;
+	&:hover {
+		transform: translateY(130px);
+		transition: all 1.27s;
+	}
+}
+.tercera-parte {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 250px;
+	margin-bottom: 10px;
+	video {
+		width: 40%;
+		margin-right: 100px;
+	}
+	p {
+		font-size: 20px;
+	}
+	img {
+		height: 60px;
+	}
+}
+.cam-home {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	margin-bottom: 40px;
+	img {
+		height: 210px;
+		width: auto;
+		animation-name: saltarin;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-out;
+		animation-duration: 4s;
+		margin-right: 150px;
+	}
+}
+.barrita {
+	li {
+		&:hover {
+			background-color: $background-color_1;
+			a {
+				color: $color_2;
+			}
+		}
+	}
+	.seleccionada {
+		background-color: $background-color_1;
+		a {
+			color: $color_2;
+		}
+	}
+}
+.texto-foto-home {
+	float: right;
+	width: 500px;
+	margin: 100px 300px 0px 0px;
+	font-size: 18px;
+	text-align: justify;
+}
+.imagen-home {
+	height: auto;
+	width: 100%;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 123px;
+}
+footer {
+	background-color: $background-color_1;
+	font-size: 18px;
+	color: $color_2;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 13px;
+	padding-right: 13px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.redes-sociales {
+	display: inline-block;
+}
+.todo-nosotros {
+	min-height: 761px;
+	margin-top: 40px;
+	margin-bottom: 18px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.texto-foto-nosotros {
+	width: 500px;
+	font-size: 16px;
+	text-align: justify;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 30px;
+	h3 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+.imagen-nosotros {
+	height: 600px;
+	width: 480px;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 30px;
+}
+.papa-servicios {
+	margin: 60px 30px;
+}
+.titulo-servicios {
+	text-align: center;
+	margin-top: 60px;
+}
+.imagen-servicios {
+	width: 100%;
+	height: 70%;
+	object-fit: cover;
+	object-position: center center;
+}
+.camarita {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	object-position: bottom;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.servicios {
+	margin-left: 240px;
+	margin-right: 240px;
+	margin-top: 0px;
+	margin-bottom: 35px;
+	h1 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}
+.grilla-proyecto {
+	text-align: justify;
+	height: auto;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 550px 150px;
+	grid-template-areas: "bloque1 bloque2 bloque2" "bloque1 bloque3 bloque3";
+}
+.bloque1 {
+	grid-area: bloque1;
+	padding-right: 40px;
+}
+.bloque2 {
+	grid-area: bloque2;
+}
+.bloque3 {
+	grid-area: bloque3;
+	padding-right: 40px;
+	padding-top: 20px;
+}
+.bloque4 {
+	grid-area: bloque4;
+	padding-top: 20px;
+}
+.contactos {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.cuestionario-contacto {
+	width: 500px;
+	font-size: 18px;
+	margin: 70px 50px;
+	div {
+		label {
+			display: block;
+			font-size: 14px;
+			margin-bottom: 5px;
+		}
+		input {
+			width: 100%;
+			line-height: 20px;
+			height: 20px;
+		}
+		button {
+			padding: 5px;
+			position: relative;
+			top: 50%;
+			left: 43%;
+			background-color: $background-color_4;
+			cursor: pointer;
+			&:hover {
+				background-color: $background-color_5;
+			}
+		}
+		margin-top: 27px;
+	}
+	h2 {
+		text-align: center;
+	}
+}
+.foto-contacto {
+	margin: 72px 50px;
+	margin-right: 0;
+	.lente {
+		width: 410px;
+		vertical-align: top;
+	}
+	.lente2 {
+		margin-top: 60px;
+		width: 410px;
+		position: relative;
+		left: -40px;
+	}
+}
+select {
+	width: 100%;
+	line-height: 20px;
+	height: 20px;
+	line-height: 24px;
+	height: 24px;
+}
+.foto-galeria {
+	width: 100%;
+	display: block;
+}
+.grilla-galeria {
+	text-align: justify;
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	.fondo {
+		height: 100%;
+		p {
+			color: $color_1;
+			line-height: 450px;
+			text-align: center;
+			font-size: 19px;
+			font-weight: bold;
+		}
+		&:hover {
+			background-color: $background-color_3;
+			height: 100%;
+		}
+	}
+}
+.tipo1 {
+	width: 33.3%;
+	background-image: url('./images/wedding.jpg');
+	background-size: cover;
+}
+.tipo2 {
+	width: 33.4%;
+	background-image: url('./images/engagements.jpg');
+	background-size: cover;
+}
+.tipo3 {
+	width: 33.3%;
+	background-image: url('./images/events.jpg');
+	background-size: cover;
+}
+.segunda-parte-servicio {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 10px;
+	img {
+		width: 40%;
+		margin-right: 100px;
+	}
+	p {
+		font-size: 20px;
+	}
+}
+.tercera-parte-servicio {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+.comentario {
+	width: 250px;
+	margin-bottom: 40px;
+	margin-right: 10px;
+	margin-left: 10px;
+	img {
+		height: 100px;
+		margin-bottom: 15px;
+	}
+}
+.titulo-comentario {
+	text-align: center;
+	margin-top: 150px;
+}
+@media (max-width: 420px) {
+	.segunda-parte-servicio {
+		div {
+			width: 75%;
+		}
+	}
+}
+@media (max-width: 480px) {
+	.tercera-parte {
+		h3 {
+			font-size: 17px;
+			margin-left: 20px;
+			img {
+				width: 130px;
+				height: auto;
+			}
+		}
+		p {
+			font-size: 16px;
+			margin-left: 20px;
+		}
+	}
+	.cam-home {
+		img {
+			width: 180px;
+			height: auto;
+			margin-right: 55px;
+			margin-top: 15px;
+		}
+		margin-bottom: 30px;
+	}
+	.imagen-nosotros {
+		width: 100%;
+		height: auto;
+	}
+	.foto-contacto {
+		.lente {
+			width: 100%;
+			height: auto;
+		}
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+@media (max-width: 500px) {
+	.cam-home {
+		img {
+			width: 180px;
+			height: auto;
+			margin-right: 55px;
+			margin-top: 15px;
+		}
+		margin-bottom: 30px;
+	}
+	.papa-servicios {
+		p {
+			font-size: 13px;
+			margin-top: 15px;
+		}
+	}
+}
+@media (max-width: 750px) {
+	.foto-home {
+		p {
+			font-size: 13px;
+		}
+	}
+	.segundo-titulo {
+		font-size: 20px;
+		padding-top: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	footer {
+		flex-direction: column;
+		align-items: center;
+		font-size: 13px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+@media (max-width: 850px) {
+	.segunda-parte-servicio {
+		flex-direction: column;
+		img {
+			width: 75%;
+			margin-right: 0;
+			margin-bottom: 40px;
+		}
+		div {
+			width: 75%;
+		}
+	}
+}
+@media (max-width: 880px) {
+	.foto-contacto {
+		margin-left: 0px;
+		.lente2 {
+			display: none;
+		}
+	}
+	.grilla-galeria {
+		flex-direction: column;
+		.fondo {
+			p {
+				line-height: 350px;
+			}
+		}
+	}
+	.tipo {
+		width: 100%;
+		height: 350px;
+	}
+}
+@media (max-width: 991px) {
+	.navbar-light {
+		.navbar-nav {
+			.nav-link {
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.tercera-parte {
+		flex-direction: column;
+		margin-top: 80px;
+		margin-bottom: 80px;
+		video {
+			margin-right: 0px;
+			margin-bottom: 50px;
+			width: 70%;
+		}
+	}
+	.cam-home {
+		img {
+			margin-top: 100px;
+		}
+	}
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conexión con el cliente y usuario">
+    <meta name="keywords" content="consultas, preguntas, registros, respuestas">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Royal Click Fotografía / Contactos</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/logo.png" alt="logotipo de la empresa">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">GALERÍA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contactos.html">CONTACTOS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contactos">
+            <div class="foto-contacto">
+                <img class="lente" src="../images/contactos1.jpg" alt="faro en la playa">
+                <img class="lente2" src="../images/contactos2.jpg" alt="mujer embarazada en el umbral">
+            </div>
+            <div class="cuestionario-contacto">
+                <h2>¡Te estamos esperando! ¡Contáctanos!</h2>
+                <form action="">
+                    <div class="dato">
+                        <label for="nombres-contacto" style="display: block;">Nombres:</label>
+                        <input id="nombres-contacto" placeholder="Ejm: Juan Manuel" type="text" maxlength="50"
+                            required />
+                    </div>
+                    <div>
+                        <label for="apellidos-contacto">Apellidos:</label>
+                        <input id="apellidos-contacto" placeholder="Ejm: Valverde Pimentel" type="text" maxlength="50"
+                            required />
+                    </div>
+                    <div>
+                        <label for="email-contacto">E-mail:</label>
+                        <input id="email-contacto" placeholder="Ejm: jmvalverde@gmail.com" type="email" maxlength="50"
+                            required />
+                    </div>
+                    <div>
+                        <label for="telefono-contacto">Teléfono:</label>
+                        <input id="telefono-contacto" placeholder="Ejm: +51 987654321" type="number" maxlength="50"
+                            required />
+                    </div>
+                    <div>
+                        <label for="dia-evento-contacto">Día de evento:</label>
+                        <input id="dia-evento-contacto" type="date" required />
+                    </div>
+                    <div>
+                        <label for="tipo-evento-contacto">Tipo de evento:</label>
+                        <select id="tipo-evento-contacto">
+                            <option value="Matrimonio">Bodas</option>
+                            <option value="Pedida de mano">Pedidas de mano</option>
+                            <option value="Cumpleaños">Eventos</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit"><b>ENVIAR</b></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="redes-sociales">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            &nbsp;
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>+51 987654321</span>
+        </div>
+        <span class="derechos-de-autor"><i>COPYRIGHTS©ROYAL CLICK | PHOTOGRAPHY 2023</i></span>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
